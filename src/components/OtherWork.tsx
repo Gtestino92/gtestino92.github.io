@@ -21,9 +21,11 @@ export function OtherWork() {
                 <p>{project.description}</p>
                 <p className="project-details">{project.details}</p>
                 <p className="project-stack">{project.stack}</p>
-                {project.repository ? (
-                  <a href={project.repository}>Repository</a>
-                ) : null}
+                {project.links?.map((link) => (
+                  <a key={link.href} href={link.href} target="_blank" rel="noreferrer">
+                    {link.label}
+                  </a>
+                ))}
               </div>
             </article>
           ))}

@@ -51,7 +51,12 @@ export const otherProjects = [
     details:
       "Covers job acquisition, ATS ingestion, normalization/classification, matching/prioritization, SQLite as the source of truth and Excel shortlist output.",
     stack: "Python · SQLite",
-    repository: "https://github.com/Gtestino92/chamba-hunter",
+    links: [
+      {
+        label: "Repository",
+        href: "https://github.com/Gtestino92/chamba-hunter",
+      },
+    ],
     placeholder: "Future Excel shortlist screenshot",
   },
   {
@@ -62,6 +67,12 @@ export const otherProjects = [
     details:
       "Included a 50+ model catalog, multi-image product pages, JavaScript/CSS/jQuery frontend, sticky cart, checkout, email notifications, backoffice order history, status management and historical sales charts. A separate Python/Flask service generated recommendations from previous purchase behavior during checkout.",
     stack: "Java / Spring · JavaScript · CSS · jQuery · Python · Flask",
+    links: [
+      {
+        label: "Repository",
+        href: "https://github.com/Gtestino92/MacetasOntivero",
+      },
+    ],
     placeholder: "Future faithful UI reconstruction",
   },
 ];

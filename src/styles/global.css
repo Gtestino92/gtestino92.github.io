@@ -529,7 +529,10 @@ ul {
 
 .reals-content h3 {
   color: #fffaf1;
+  font-family: "Cormorant Garamond", Georgia, serif;
   font-size: clamp(3rem, 7vw, 5.4rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .reals-content .lead {

@@ -3,9 +3,9 @@ export const profile = {
   title: "Backend Software Engineer",
   stackLine: "Java · Kotlin · Spring Boot · Node.js · PostgreSQL · AWS",
   githubUrl: "https://github.com/Gtestino92",
-  linkedinUrl: "#linkedin-url-placeholder",
-  resumeUrl: "#resume-url-placeholder",
-  emailUrl: "mailto:email-placeholder@example.com",
+  linkedinUrl: "https://www.linkedin.com/in/giuliano-testino-46427781/",
+  resumeUrl: "/Giuliano_Testino_Resume.pdf",
+  emailUrl: "mailto:gtestino1992@gmail.com",
 };
 
 export const navigation = [

@@ -15,9 +15,15 @@ export function Contact() {
         </p>
         <div className="contact-links" aria-label="Contact links">
           <a href={profile.emailUrl}>Email</a>
-          <a href={profile.linkedinUrl}>LinkedIn</a>
-          <a href={profile.githubUrl}>GitHub</a>
-          <a href={profile.resumeUrl}>Resume</a>
+          <a href={profile.linkedinUrl} target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+          <a href={profile.githubUrl} target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+          <a href={profile.resumeUrl} target="_blank" rel="noreferrer">
+            Resume
+          </a>
         </div>
       </div>
     </section>

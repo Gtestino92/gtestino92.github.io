@@ -25,9 +25,15 @@ export function Hero() {
             </a>
           </div>
           <div className="hero-profile-links" aria-label="Professional links">
-            <a href={profile.githubUrl}>GitHub</a>
-            <a href={profile.linkedinUrl}>LinkedIn</a>
-            <a href={profile.resumeUrl}>Resume</a>
+            <a href={profile.githubUrl} target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            <a href={profile.linkedinUrl} target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+            <a href={profile.resumeUrl} target="_blank" rel="noreferrer">
+              Resume
+            </a>
           </div>
         </div>
         <aside className="hero-signal" aria-label="Professional profile summary">

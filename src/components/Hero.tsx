@@ -24,12 +24,28 @@ export function Hero() {
               View work
             </a>
           </div>
+          <div className="hero-profile-links" aria-label="Professional links">
+            <a href={profile.githubUrl}>GitHub</a>
+            <a href={profile.linkedinUrl}>LinkedIn</a>
+            <a href={profile.resumeUrl}>Resume</a>
+          </div>
         </div>
-        <aside className="hero-aside" aria-label="Professional links">
-          <span>Profiles</span>
-          <a href={profile.githubUrl}>GitHub</a>
-          <a href={profile.linkedinUrl}>LinkedIn</a>
-          <a href={profile.resumeUrl}>Resume</a>
+        <aside className="hero-signal" aria-label="Professional profile summary">
+          <div>
+            <strong>7+ years</strong>
+            <span>Software engineering</span>
+          </div>
+          <div>
+            <strong>4+ years</strong>
+            <span>Santander</span>
+          </div>
+          <div>
+            <strong>Backend · Distributed Systems</strong>
+            <span>Java · Kotlin · Spring</span>
+          </div>
+          <div>
+            <strong>Buenos Aires · Remote</strong>
+          </div>
         </aside>
       </div>
     </section>

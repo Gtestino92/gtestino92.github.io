@@ -2,11 +2,11 @@ import { experiences } from "../data/experience";
 
 export function Experience() {
   return (
-    <section className="section section-ruled" id="experience" aria-labelledby="experience-title">
+    <section className="section professional-section" id="experience" aria-labelledby="experience-title">
       <div className="container">
         <div className="section-heading">
           <p className="eyebrow">Professional experience</p>
-          <h2 id="experience-title">Backend work in financial systems.</h2>
+          <h2 id="experience-title">Backend systems in production.</h2>
         </div>
 
         <div className="experience-list">

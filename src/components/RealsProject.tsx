@@ -5,8 +5,7 @@ export function RealsProject() {
     <section className="section selected-work" id="work" aria-labelledby="work-title">
       <div className="container">
         <div className="section-heading">
-          <p className="eyebrow">Selected work</p>
-          <h2 id="work-title">Reals</h2>
+          <p className="eyebrow" id="work-title">Selected work</p>
         </div>
 
         <article className="reals-panel">

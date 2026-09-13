@@ -2,7 +2,7 @@ import { skillGroups } from "../data/skills";
 
 export function TechnicalProfile() {
   return (
-    <section className="section" id="skills" aria-labelledby="skills-title">
+    <section className="section professional-subsection" id="skills" aria-labelledby="skills-title">
       <div className="container">
         <div className="section-heading split-heading">
           <div>

@@ -6,7 +6,7 @@ export function Contact() {
       <div className="container contact-panel">
         <div>
           <p className="eyebrow">Contact</p>
-          <h2 id="contact-title">Open to backend software engineering opportunities.</h2>
+          <h2 id="contact-title">Open to backend engineering opportunities.</h2>
         </div>
         <p>
           Interested in backend systems, distributed services, financial

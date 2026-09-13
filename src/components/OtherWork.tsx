@@ -6,7 +6,7 @@ export function OtherWork() {
       <div className="container">
         <div className="section-heading compact-heading">
           <p className="eyebrow">Other work</p>
-          <h2 id="other-work-title">Smaller projects and earlier systems.</h2>
+          <h2 id="other-work-title">Other selected work.</h2>
         </div>
 
         <div className="other-work-grid">

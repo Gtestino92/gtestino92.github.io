@@ -111,6 +111,9 @@ export const otherProjects = [
         href: "https://github.com/Gtestino92/MacetasOntivero",
       },
     ],
-    placeholder: "Future faithful UI reconstruction",
+    image: {
+      src: "/projects/ontivero/capture.png",
+      alt: "Reconstruction of the Macetas Ontivero bonsai-pot catalog using original product photography.",
+    },
   },
 ];

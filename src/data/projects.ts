@@ -23,29 +23,40 @@ export const realsProject = {
       href: "https://github.com/Gtestino92/reals-app",
     },
   ],
-  screenshots: [
+  productScreenshots: [
     {
       label: "Home",
-      src: "/projects/reals/home.jpg",
+      src: "/projects/reals/home.jpeg",
       alt: "Reals home screen with activity, search for chat and affinity discovery.",
       primary: true,
     },
     {
       label: "Searching",
-      src: "/projects/reals/searching-chat.jpg",
+      src: "/projects/reals/searching.jpeg",
       alt: "Reals searching screen looking for a compatible chat.",
     },
     {
       label: "Text-first chat",
-      src: "/projects/reals/first-chat.jpg",
+      src: "/projects/reals/first-chat.jpeg",
       alt: "Reals first chat screen with messages and a guided prompt.",
     },
     {
+      label: "Profile reveal",
+      src: "/projects/reals/reveal-step.jpeg",
+      alt: "Reals next step screen where the other person's profile becomes available after the first chat.",
+    },
+    {
       label: "Second chat",
-      src: "/projects/reals/scheduling.jpg",
+      src: "/projects/reals/scheduling.jpeg",
       alt: "Reals scheduling screen with options to accept or reject a second chat.",
     },
   ],
+  authScreenshot: {
+    label: "Authentication",
+    caption: "Firebase Authentication · Google Sign-In",
+    src: "/projects/reals/login.jpeg",
+    alt: "Reals login screen using Google Sign-In.",
+  },
   highlights: [
     {
       title: "Matchmaking & concurrency",

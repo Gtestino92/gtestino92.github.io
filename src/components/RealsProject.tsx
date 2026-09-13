@@ -15,8 +15,8 @@ export function RealsProject() {
             <p className="lead">{realsProject.description}</p>
             <p className="project-status">{realsProject.status}</p>
             <p className="project-flow">
-              Search for a compatible chat, start text-first, then coordinate a
-              second chat after mutual interest.
+              Search for a compatible chat, start text-first, reveal the next
+              step, then coordinate a second chat.
             </p>
 
             <div className="stack-list" aria-label="Reals technology stack">
@@ -34,16 +34,30 @@ export function RealsProject() {
             </div>
           </div>
 
-          <div className="reals-screenshots" aria-label="Reals app screenshots">
-            {realsProject.screenshots.map((screenshot) => (
-              <figure
-                className={`reals-screenshot${screenshot.primary ? " primary" : ""}`}
-                key={screenshot.src}
-              >
-                <img src={screenshot.src} alt={screenshot.alt} loading="lazy" />
-                <figcaption>{screenshot.label}</figcaption>
-              </figure>
-            ))}
+          <div className="reals-visuals">
+            <div className="reals-flow-screenshots" aria-label="Reals core product flow screenshots">
+              {realsProject.productScreenshots.map((screenshot) => (
+                <figure
+                  className={`reals-screenshot${screenshot.primary ? " primary" : ""}`}
+                  key={screenshot.src}
+                >
+                  <img src={screenshot.src} alt={screenshot.alt} loading="lazy" />
+                  <figcaption>{screenshot.label}</figcaption>
+                </figure>
+              ))}
+            </div>
+
+            <figure className="reals-auth-screen">
+              <img
+                src={realsProject.authScreenshot.src}
+                alt={realsProject.authScreenshot.alt}
+                loading="lazy"
+              />
+              <figcaption>
+                <span>{realsProject.authScreenshot.label}</span>
+                {realsProject.authScreenshot.caption}
+              </figcaption>
+            </figure>
           </div>
         </article>
 

@@ -516,7 +516,7 @@ ul {
 
 .reals-panel {
   display: grid;
-  grid-template-columns: minmax(0, 0.68fr) minmax(620px, 1.32fr);
+  grid-template-columns: minmax(0, 0.56fr) minmax(660px, 1.44fr);
   gap: clamp(2rem, 4vw, 3.25rem);
   align-items: center;
   overflow: hidden;
@@ -582,7 +582,7 @@ ul {
 
 .reals-flow-screenshots {
   display: grid;
-  grid-template-columns: minmax(250px, 1.08fr) repeat(2, minmax(140px, 0.64fr));
+  grid-template-columns: minmax(270px, 1.08fr) repeat(2, minmax(175px, 0.78fr));
   gap: 1rem;
   align-items: center;
   min-width: 0;
@@ -593,17 +593,27 @@ ul {
   color: rgba(255, 250, 241, 0.68);
 }
 
+.reals-screenshot-trigger {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.reals-screenshot-trigger:focus-visible {
+  outline: 2px solid var(--color-accent-soft);
+  outline-offset: 5px;
+}
+
+.reals-screenshot-trigger:hover img {
+  border-color: rgba(255, 250, 241, 0.28);
+  filter: brightness(1.04);
+}
+
 .reals-screenshot.primary {
   grid-row: 1 / span 2;
-}
-
-.reals-screenshot:nth-child(3),
-.reals-screenshot:nth-child(5) {
-  transform: translateY(1.5rem);
-}
-
-.reals-screenshot:nth-child(4) {
-  transform: translateY(-1.5rem);
 }
 
 .reals-screenshot img {
@@ -621,9 +631,9 @@ ul {
 }
 
 .reals-screenshot figcaption {
-  margin-top: 0.45rem;
-  color: rgba(255, 250, 241, 0.58);
-  font-size: 0.72rem;
+  margin-top: 0.5rem;
+  color: rgba(255, 250, 241, 0.66);
+  font-size: 0.78rem;
   font-weight: 760;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -631,11 +641,11 @@ ul {
 
 .reals-auth-screen {
   display: grid;
-  grid-template-columns: 5.25rem minmax(0, 1fr);
-  gap: 0.85rem;
+  grid-template-columns: 6.25rem minmax(0, 1fr);
+  gap: 1rem;
   align-items: center;
-  width: min(100%, 24rem);
-  margin: 1.2rem 0 0 auto;
+  width: min(100%, 32rem);
+  margin: 1.1rem 0 0 auto;
   padding: 0.75rem;
   border: 1px solid rgba(255, 250, 241, 0.12);
   border-radius: 22px;
@@ -665,6 +675,91 @@ ul {
   font-weight: 760;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.reals-lightbox {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  display: grid;
+  grid-template-columns: minmax(2.75rem, 1fr) minmax(0, auto) minmax(2.75rem, 1fr);
+  place-items: center;
+  padding: clamp(1rem, 3vw, 2rem);
+  background: rgba(9, 13, 15, 0.86);
+}
+
+.reals-lightbox-figure {
+  grid-column: 2;
+  margin: 0;
+  text-align: center;
+}
+
+.reals-lightbox-figure img {
+  display: block;
+  width: auto;
+  max-width: min(78vw, 34rem);
+  height: auto;
+  max-height: 84vh;
+  border: 1px solid rgba(255, 250, 241, 0.18);
+  border-radius: 26px;
+  box-shadow: 0 28px 90px rgba(0, 0, 0, 0.48);
+}
+
+.reals-lightbox-figure figcaption {
+  margin-top: 0.85rem;
+  color: rgba(255, 250, 241, 0.78);
+  font-size: 0.86rem;
+  font-weight: 760;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.reals-lightbox-close,
+.reals-lightbox-nav {
+  border: 1px solid rgba(255, 250, 241, 0.18);
+  background: rgba(255, 250, 241, 0.08);
+  color: #fffaf1;
+  cursor: pointer;
+}
+
+.reals-lightbox-close:hover,
+.reals-lightbox-nav:hover {
+  background: rgba(255, 250, 241, 0.14);
+}
+
+.reals-lightbox-close:focus-visible,
+.reals-lightbox-nav:focus-visible {
+  outline: 2px solid var(--color-accent-soft);
+  outline-offset: 4px;
+}
+
+.reals-lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 999px;
+  font-size: 1.7rem;
+  line-height: 1;
+}
+
+.reals-lightbox-nav {
+  width: 2.75rem;
+  height: 4rem;
+  border-radius: 999px;
+  font-size: 2.3rem;
+  line-height: 1;
+}
+
+.reals-lightbox-nav.previous {
+  grid-column: 1;
+  justify-self: end;
+}
+
+.reals-lightbox-nav.next {
+  grid-column: 3;
+  justify-self: start;
 }
 
 .project-card-placeholder span {

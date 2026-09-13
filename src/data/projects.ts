@@ -23,6 +23,29 @@ export const realsProject = {
       href: "https://github.com/Gtestino92/reals-app",
     },
   ],
+  screenshots: [
+    {
+      label: "Home",
+      src: "/projects/reals/home.jpg",
+      alt: "Reals home screen with activity, search for chat and affinity discovery.",
+      primary: true,
+    },
+    {
+      label: "Searching",
+      src: "/projects/reals/searching-chat.jpg",
+      alt: "Reals searching screen looking for a compatible chat.",
+    },
+    {
+      label: "Text-first chat",
+      src: "/projects/reals/first-chat.jpg",
+      alt: "Reals first chat screen with messages and a guided prompt.",
+    },
+    {
+      label: "Second chat",
+      src: "/projects/reals/scheduling.jpg",
+      alt: "Reals scheduling screen with options to accept or reject a second chat.",
+    },
+  ],
   highlights: [
     {
       title: "Matchmaking & concurrency",

@@ -14,6 +14,10 @@ export function RealsProject() {
             <h3>{realsProject.name}</h3>
             <p className="lead">{realsProject.description}</p>
             <p className="project-status">{realsProject.status}</p>
+            <p className="project-flow">
+              Search for a compatible chat, start text-first, then coordinate a
+              second chat after mutual interest.
+            </p>
 
             <div className="stack-list" aria-label="Reals technology stack">
               {realsProject.stack.map((item) => (
@@ -30,16 +34,16 @@ export function RealsProject() {
             </div>
           </div>
 
-          <div className="phone-placeholders" aria-label="Future Reals mobile screenshots">
-            <div className="phone-placeholder primary">
-              <span>Primary mobile screenshot</span>
-            </div>
-            <div className="phone-placeholder secondary">
-              <span>Secondary screenshot</span>
-            </div>
-            <div className="phone-placeholder secondary offset">
-              <span>Conversation screenshot</span>
-            </div>
+          <div className="reals-screenshots" aria-label="Reals app screenshots">
+            {realsProject.screenshots.map((screenshot) => (
+              <figure
+                className={`reals-screenshot${screenshot.primary ? " primary" : ""}`}
+                key={screenshot.src}
+              >
+                <img src={screenshot.src} alt={screenshot.alt} loading="lazy" />
+                <figcaption>{screenshot.label}</figcaption>
+              </figure>
+            ))}
           </div>
         </article>
 

@@ -37,7 +37,7 @@ export const experiences = [
       "Developed corporate banking systems and financial workflows for Itaú Uruguay and contributed backend work for Banco Comafi.",
     points: [
       "Java and Oracle systems for financial workflows and integrations.",
-      "JavaScript, CSS and jQuery interfaces for internal banking tools.",
+      "JavaScript, CSS and jQuery interfaces for corporate home banking.",
       "Query and pagination optimization across data-heavy operational screens.",
       "Technical-functional ownership in a small team environment.",
     ],

@@ -101,10 +101,10 @@ export const otherProjects = [
     name: "Macetas Ontivero",
     eyebrow: "Earlier project",
     description:
-      "E-commerce catalog and order-management system for a bonsai pottery business.",
+      "E-commerce catalog and order-management system for a bonsai pottery business, with ML-based product recommendations.",
     details:
-      "Included a 50+ model catalog, multi-image product pages, JavaScript/CSS/jQuery frontend, sticky cart, checkout, email notifications, backoffice order history, status management and historical sales charts. A separate Python/Flask service generated recommendations from previous purchase behavior during checkout.",
-    stack: "Java / Spring · JavaScript · CSS · jQuery · Python · Flask",
+      "50+ product models, multi-image catalog, sticky cart and checkout, email notifications, backoffice order management and sales history. A Python/Flask ML service ranked recommendations from historical purchase data.",
+    stack: "Java / Spring · JavaScript / jQuery · Python / Flask · Machine Learning",
     links: [
       {
         label: "Repository",

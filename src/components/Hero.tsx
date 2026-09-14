@@ -6,7 +6,7 @@ export function Hero() {
       <div className="container hero-grid">
         <div className="hero-copy">
           <p className="eyebrow">Backend Software Engineer</p>
-          <h1 id="hero-title">{profile.name.toUpperCase()}</h1>
+          <h1 id="hero-title">{profile.name}</h1>
           <p className="hero-title">{profile.title}</p>
           <p className="hero-intro">
             7+ years of professional software engineering experience building

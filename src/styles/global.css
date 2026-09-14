@@ -213,6 +213,13 @@ ul {
   align-items: end;
 }
 
+.hero h1 {
+  font-family: "Inter Tight", Inter, sans-serif;
+  font-size: clamp(3.05rem, 6.25vw, 4.35rem);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
 .hero-title {
   margin-bottom: 1rem;
   color: var(--color-ink);

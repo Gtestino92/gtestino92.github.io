@@ -4,17 +4,16 @@ export function Contact() {
   return (
     <section className="section contact-section" id="contact" aria-labelledby="contact-title">
       <div className="container contact-panel">
-        <div>
+        <div className="contact-copy">
           <p className="eyebrow">Contact</p>
-          <h2 id="contact-title">Open to backend engineering opportunities.</h2>
+          <h2 id="contact-title">Get in touch.</h2>
+          <p>
+            Open to backend engineering opportunities, particularly backend and
+            distributed systems roles.
+          </p>
         </div>
-        <p>
-          Interested in backend systems, distributed services, financial
-          technology and product engineering roles where reliability and clear
-          technical ownership matter.
-        </p>
         <div className="contact-links" aria-label="Contact links">
-          <a href={profile.emailUrl}>Email</a>
+          <a href={profile.emailUrl}>gtestino1992@gmail.com</a>
           <a href={profile.linkedinUrl} target="_blank" rel="noreferrer">
             LinkedIn
           </a>

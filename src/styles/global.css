@@ -979,43 +979,37 @@ ul {
 }
 
 .contact-section {
-  padding: 2.5rem 0 3rem;
+  padding: 2rem 0 2.6rem;
+  border-top: 1px solid var(--color-line);
 }
 
 .contact-panel {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.7fr);
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 2rem;
-  align-items: end;
-  padding: 2.4rem;
-  border: 1px solid var(--color-line);
-  border-radius: 32px;
-  background: var(--color-ink);
+  align-items: center;
 }
 
 .contact-panel h2 {
-  max-width: 650px;
-  font-size: clamp(2rem, 4vw, 3.35rem);
+  margin-bottom: 0.65rem;
+  color: var(--color-ink);
+  font-size: clamp(1.85rem, 3vw, 2.55rem);
+  letter-spacing: -0.045em;
 }
 
-.contact-panel h2,
-.contact-panel p {
-  color: #fffaf1;
-}
-
-.contact-panel p {
+.contact-copy p {
+  max-width: 52ch;
   margin-bottom: 0;
-  opacity: 0.78;
+  color: var(--color-muted);
+  font-size: 0.98rem;
 }
 
 .contact-links {
-  grid-column: 1 / -1;
-  padding-top: 1.25rem;
-  border-top: 1px solid rgba(255, 250, 241, 0.18);
+  justify-content: flex-end;
 }
 
 .contact-links a {
-  color: #fffaf1;
+  color: var(--color-accent-dark);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1094,6 +1088,10 @@ ul {
   .reals-auth-screen {
     margin-left: 0;
   }
+
+  .contact-links {
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: 680px) {
@@ -1124,8 +1122,7 @@ ul {
     font-size: clamp(3.2rem, 19vw, 6rem);
   }
 
-  .experience-card,
-  .contact-panel {
+  .experience-card {
     padding: 1.25rem;
     border-radius: 22px;
   }

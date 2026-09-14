@@ -416,6 +416,17 @@ ul {
   font-weight: 740;
 }
 
+.environment .environment-skill {
+  color: var(--color-ink-soft);
+  font-weight: 400;
+}
+
+.environment .environment-skill:not(:last-child)::after {
+  content: "·";
+  margin: 0 0.42rem;
+  color: var(--color-ink-muted);
+}
+
 .professional-section {
   padding: 4.35rem 0 0;
   border-top: 1px solid var(--color-line);
@@ -515,6 +526,7 @@ ul {
 }
 
 .reals-panel {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(0, 0.56fr) minmax(660px, 1.44fr);
   gap: clamp(2rem, 4vw, 3.25rem);
@@ -529,10 +541,12 @@ ul {
 
 .reals-content h3 {
   color: #fffaf1;
-  font-family: "Cormorant Garamond", Georgia, serif;
+  font-family: "Bodoni Moda", "Times New Roman", serif;
   font-size: clamp(3rem, 7vw, 5.4rem);
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 0.95;
+  letter-spacing: -0.01em;
 }
 
 .reals-content .lead {
@@ -580,10 +594,36 @@ ul {
 }
 
 .reals-visuals {
+  position: relative;
   min-width: 0;
+  isolation: isolate;
+}
+
+.reals-visuals::before,
+.reals-visuals::after {
+  content: "";
+  position: absolute;
+  inset: clamp(-1.4rem, -2vw, -0.75rem) -1.4rem -1.15rem 10%;
+  z-index: 0;
+  border-radius: 30px;
+  pointer-events: none;
+}
+
+.reals-visuals::before {
+  background-image: url("/projects/reals/editorial-dark.png");
+  background-repeat: no-repeat;
+  background-position: right 42% center;
+  background-size: auto 118%;
+  opacity: 0.48;
+}
+
+.reals-visuals::after {
+  background: rgba(10, 20, 25, 0.32);
 }
 
 .reals-flow-screenshots {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: minmax(270px, 1.08fr) repeat(2, minmax(175px, 0.78fr));
   gap: 1rem;
@@ -643,6 +683,8 @@ ul {
 }
 
 .reals-auth-screen {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: 6.25rem minmax(0, 1fr);
   gap: 1rem;

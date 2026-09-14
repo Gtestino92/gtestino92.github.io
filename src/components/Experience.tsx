@@ -45,7 +45,15 @@ export function Experience() {
 
                 {experience.environment ? (
                   <p className="environment">
-                    <span>Engineering environment:</span> {experience.environment}
+                    <span>Engineering environment:</span>{" "}
+                    {experience.environment
+                      .replace(/\.$/, "")
+                      .split(", ")
+                      .map((item) => (
+                        <span className="environment-skill" key={item}>
+                          {item}
+                        </span>
+                      ))}
                   </p>
                 ) : null}
               </div>

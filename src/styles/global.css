@@ -210,7 +210,7 @@ ul {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 300px;
   gap: 3.5rem;
-  align-items: end;
+  align-items: start;
 }
 
 .hero h1 {
@@ -269,9 +269,28 @@ ul {
   padding-bottom: 0.45rem;
 }
 
+.hero-mascot-card {
+  display: grid;
+  place-items: center;
+  padding: 0 0 0.35rem;
+  border-top: 0;
+  text-align: center;
+}
+
+.hero-mascot-card img {
+  display: block;
+  width: min(92%, 15.5rem);
+  height: auto;
+  filter: drop-shadow(0 22px 36px rgba(29, 37, 40, 0.16));
+}
+
 .hero-signal div {
   padding-top: 1rem;
   border-top: 1px solid rgba(49, 95, 104, 0.22);
+}
+
+.hero-signal .hero-mascot-card {
+  border-top: 0;
 }
 
 .hero-signal strong {

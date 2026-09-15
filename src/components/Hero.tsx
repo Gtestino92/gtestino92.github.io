@@ -37,6 +37,12 @@ export function Hero() {
           </div>
         </div>
         <aside className="hero-signal" aria-label="Professional profile summary">
+          <div className="hero-mascot-card">
+            <img
+              src="/mascot/gt-dark-space-lord-mascot.png"
+              alt="GT dark space lord portfolio mascot"
+            />
+          </div>
           <div>
             <strong>7+ years</strong>
             <span>Software engineering</span>

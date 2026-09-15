@@ -79,16 +79,6 @@ export const realsProject = {
 
 export const otherProjects = [
   {
-    name: "Esperanza",
-    eyebrow: "In progress",
-    description:
-      "Responsive landing page for an independent pastry business.",
-    details:
-      "A brand-focused web presence centered on product presentation, mobile usability and direct customer contact.",
-    stack: "React · TypeScript · Vite",
-    placeholder: "Esperanza landing preview",
-  },
-  {
     name: "Chamba Hunter",
     description:
       "Python automation pipeline for discovering, normalizing, classifying and prioritizing software engineering job opportunities.",

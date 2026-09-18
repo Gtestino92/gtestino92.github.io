@@ -2,7 +2,7 @@ export const experiences = [
   {
     company: "Santander Tecnologia Argentina",
     role: "Software Engineer",
-    period: "March 2022 – June 2026",
+    period: "March 2022 – Present",
     description:
       "Worked on distributed backend systems supporting nationwide card logistics and digital banking.",
     highlights: [
